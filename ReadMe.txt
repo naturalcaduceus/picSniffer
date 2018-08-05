@@ -1,18 +1,20 @@
-±¾³ÌĞòËùĞè»·¾³£º
+æœ¬ç¨‹åºæ‰€éœ€ç¯å¢ƒï¼š
 Windows 10
 Visual Studio 2017
 
-Python²¿·Ö£º
-Python 3.6£¨°üº¬Tkinter£©
-Pillow °ü
-opencv-contrib-python==3.4.1.15 °ü
-numpy °ü
-tensorflow °ü
+Pythonéƒ¨åˆ†ï¼š
+Python 3.6ï¼ˆåŒ…å«Tkinterï¼‰
+Pillow åŒ…
+opencv-contrib-python==3.4.1.15 åŒ…
+numpy åŒ…
+tensorflow åŒ…
 
-ÆäËû£º
-Inception-v3Ä£ĞÍ¡ª¡ªhttps://github.com/taey16/tf/tree/master/imagenet£¨ÒªÔÚ´úÂëÀïĞ´ºÃÒıÓÃÂ·¾¶£©
-Tesseract-OCR¡ª¡ªÎÄ×ÖÊ¶±ğ²¿·ÖĞèÒªÓÃµ½µÄ¿â
+å…¶ä»–ï¼š
+Inception-v3æ¨¡å‹â€”â€”https://github.com/taey16/tf/tree/master/imagenetï¼ˆè¦åœ¨ä»£ç é‡Œå†™å¥½å¼•ç”¨è·¯å¾„ï¼‰
+Tesseract-OCRâ€”â€”æ–‡å­—è¯†åˆ«éƒ¨åˆ†éœ€è¦ç”¨åˆ°çš„åº“
 
 
 
-Ê¹ÓÃVisual Studio 2017´ò¿ª¡°±ÏÒµÉè¼Æ-ĞáÍ¼¹·.sln¡±£¬È»ºóÉèÖÃFP.pyÎªÆğÊ¼ÔËĞĞÎÄ¼ş¼´¿ÉÔËĞĞ¡£
+ä½¿ç”¨Visual Studio 2017æ‰“å¼€â€œæ¯•ä¸šè®¾è®¡-å—…å›¾ç‹—.slnâ€ï¼Œç„¶åè®¾ç½®FP.pyä¸ºèµ·å§‹è¿è¡Œæ–‡ä»¶å³å¯è¿è¡Œã€‚
+PSï¼šZæ‰“å¤´çš„ä¸¤ä¸ª.pyæ–‡ä»¶æ˜¯ä¸¤ä¸ªç‰ˆæœ¬ï¼Œ
+å…¶ä¸­Z_FP_XiuTu-dog-version.pyæ˜¯å•ä¸ªå°±èƒ½è¿è¡Œçš„ï¼ŒZ_Frontpage.pyæ˜¯æœ€åˆçš„ç®€é™‹ç‰ˆæœ¬ã€‚è¿™ä¸¤ä¸ªæ–‡ä»¶ä¸æ˜¯FPæ‰€éœ€çš„ã€‚
