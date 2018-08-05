@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "毕业设计-嗅图狗", "毕业设计-嗅图狗\毕业设计-嗅图狗.pyproj", "{78E76231-E02E-4752-8C3F-55C3ECE7D5EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E76231-E02E-4752-8C3F-55C3ECE7D5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E76231-E02E-4752-8C3F-55C3ECE7D5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA50A62F-F3E7-406E-A9C2-A10407EE315B}
+	EndGlobalSection
+EndGlobal
