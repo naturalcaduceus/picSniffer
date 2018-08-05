@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>78e76231-e02e-4752-8c3f-55c3ece7d5ea</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>FP.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Z_FP_XiuTu-dog-version.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>毕业设计-嗅图狗</Name>
+    <Name>picSniffer</Name>
     <RootNamespace>毕业设计-嗅图狗</RootNamespace>
     <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>

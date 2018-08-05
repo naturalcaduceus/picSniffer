@@ -11,6 +11,10 @@ import time,datetime
 import threading
 import tkinter.messagebox
 
+_icon='bitbug_favicon.ico'#'_icon.ico'
+_start='start.png'#'_start.png'
+_pic='pic.png'#'_pic.png'
+
 #期望图像显示的大小  
 w_box = 250
 h_box = 165  
@@ -182,52 +186,51 @@ def treeview_sort_column2(tv, col, reverse):
 #算法陈列======================================================================
 class Dhash:
     def getCode(img,size):
-	    result = []
-	    # print("x==",size[0])
-	    # print("y==",size[1]-1)	
-	    x_size = size[0]-1#width
-	    y_size = size[1] #high
-	    for x in range(0,x_size):
-		    for y in range(0,y_size):
-			    now_value = img.getpixel((x,y))
-			    next_value = img.getpixel((x+1,y))
-			    if next_value < now_value:
-				    result.append(1)
-			    else:
-				    result.append(0)
-	    return result
+        result = []
+        # print("x==",size[0])
+        # print("y==",size[1]-1)	
+        x_size = size[0]-1#width
+        y_size = size[1] #high
+        for x in range(0,x_size):
+            for y in range(0,y_size):
+                now_value = img.getpixel((x,y))
+                next_value = img.getpixel((x+1,y))
+                if next_value < now_value:
+                    result.append(1)
+                else:
+                    result.append(0)
+        return result
 
     def compCode(code1,code2):
-	    num = 0
-	    for index in range(0,len(code1)):
-		    if code1[index] != code2[index]:
-			    num+=1
-	    return num 
+        num = 0
+        for index in range(0,len(code1)):
+            if code1[index] != code2[index]:
+                num+=1
+        return num 
 
     def classfiy_dHash(image1,image2,size=(9,8)):
-	    image1 = image1.resize(size).convert("RGBA").convert('L')
-	    code1 = Dhash.getCode(image1, size)
-	    image2 = image2.resize(size).convert("RGBA").convert('L')
-	    code2 = Dhash.getCode(image2, size)
-	    assert len(code1) == len(code2),"error"	
-	    return Dhash.compCode(code1, code2)
+        image1 = image1.resize(size).convert("RGBA").convert('L')
+        code1 = Dhash.getCode(image1, size)
+        image2 = image2.resize(size).convert("RGBA").convert('L')
+        code2 = Dhash.getCode(image2, size)
+        assert len(code1) == len(code2),"error"	
+        return Dhash.compCode(code1, code2)
 
 class Histogram:
     def classfiy_histogram(image1,image2,size = (256,256)):
-	    image1 = image1.resize(size).convert("RGBA").convert("RGB")
-	    g = image1.histogram()
-	    image2 = image2.resize(size).convert("RGBA").convert("RGB")
-	    s = image2.histogram()
-	    assert len(g) == len(s),"error"
-	    data = []
+        image1 = image1.resize(size).convert("RGBA").convert("RGB")
+        g = image1.histogram()
+        image2 = image2.resize(size).convert("RGBA").convert("RGB")
+        s = image2.histogram()
+        assert len(g) == len(s),"error"
+        data = []
 
-	    for index in range(0,len(g)):
-		    if g[index] != s[index]:
-			    data.append(1 - abs(g[index] - s[index])/max(g[index],s[index]) )
-		    else:
-			    data.append(1)
-	
-	    return sum(data)/len(g)
+        for index in range(0,len(g)):
+            if g[index] != s[index]:
+                data.append(1 - abs(g[index] - s[index])/max(g[index],s[index]) )
+            else:
+                data.append(1)
+        return sum(data)/len(g)
 
 import colorsys
 import math
@@ -586,7 +589,7 @@ root = Tk()     # 初始旷的声明
 root.title('嗅图狗 v0.9精简版')#设置窗口标题
 root.geometry('1150x585+500+200')#设置窗口的大小宽x高+偏移量
 root.resizable(width=True, height=True) #宽不可变, 高可变,默认为True
-root.iconbitmap('_icon.ico')
+root.iconbitmap( _icon )
 
 ft1 = tkFont.Font(family='Fixdsys', size=12)
 ft2 = tkFont.Font(family='Fixdsys', size=10)
@@ -613,7 +616,7 @@ label4=Label(frm_BBB1,textvariable = x, font=ft1)
 label4.pack(fill=BOTH)
 x.set("无任务")
 
-button_img_gif = PhotoImage(file='_start.png')  
+button_img_gif = PhotoImage(file= _start )  
 button_img = Button(frm_BBB1,
                    image = button_img_gif,
                    text = '开始搜图'
@@ -667,7 +670,7 @@ frm_R = Frame(frm,bg='gray')
 frm_R.pack(fill=BOTH)
 Label(frm_R, text='图片预览', font=(15)).pack()
 
-pil_image = Image.open('_pic.png')  #打开
+pil_image = Image.open( _pic )  #打开
 w, h = pil_image.size              #获取原比例
 pil_image_resized = resize(w, h, w_box, h_box, pil_image)#改成合适比例函数
 tk_image = ImageTk.PhotoImage(pil_image_resized)         #转成XX对象
