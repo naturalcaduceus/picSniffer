@@ -20,5 +20,5 @@ PS：Z打头的两个.py文件是两个版本，
 
 
 【本软件代码公开，不允许私自更改署名、盗用，或者制作收费软件！】
-j介绍以及更新发布的链接：https://blog.csdn.net/sinat_27382047/article/details/83040411
+介绍以及更新发布的链接：https://blog.csdn.net/sinat_27382047/article/details/83040411
 最后，本人想出的“嗅图狗”这个名字，希望大家让给我QAQ~
